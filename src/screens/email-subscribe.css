@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer components {
+    .subscribe-box {
+        @apply flex flex-col md:flex-row rounded-l-xl;
+
+        > img {
+            @apply rounded-xl rounded-b-none hover:rounded-b-none h-80 md:h-64 md:rounded-l-xl md:rounded-r-none hover:md:rounded-r-none transform hover:scale-105 hover:rounded-xl duration-200;
+        }
+
+        > div {
+            @apply p-6 md:p-12;
+
+            > h2 {
+                @apply font-serif text-xl font-medium text-center text-white md:text-left;
+            }
+
+            > p {
+                @apply max-w-xs my-4 text-xs leading-5 tracking-wide text-center text-white md:text-left;
+            }
+
+            > div {
+                @apply flex flex-col mt-5 space-y-4 md:space-x-3 md:flex-row md:space-y-0;
+            }
+        }
+    }
+}
