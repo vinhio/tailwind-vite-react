@@ -1,15 +1,15 @@
 import React, {memo} from 'react';
 
 export interface FragmentProps {
-    readonly children: React.ReactNode;
+  readonly children: React.ReactNode;
 }
 
 const FragmentComponent: React.FC<FragmentProps> = ({children}) => {
-    return (
-        <>
-            {children}
-        </>
-    );
+  return (
+    <>
+        {children}
+    </>
+  );
 };
 
 FragmentComponent.displayName = "Fragment";
