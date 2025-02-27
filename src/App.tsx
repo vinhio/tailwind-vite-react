@@ -1,10 +1,10 @@
 import { Fragment } from "@/components";
-import {EmailSubscribe} from "@/screens";
+import {Home} from "@/screens";
 
 function App() {
   return (
     <Fragment>
-      <EmailSubscribe/>
+      <Home/>
     </Fragment>
   );
 }

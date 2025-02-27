@@ -6,21 +6,6 @@
     html {
         @apply font-main text-white bg-gray-900 antialiased;
     }
-    body {
-        @apply m-0 flex place-items-center min-w-[320px] min-h-screen;
-    }
-}
-
-@layer components {
-    #root {
-        @apply mx-auto p-8 text-center max-w-screen-xl;
-    }
-    .logo {
-        @apply h-24 hover:filter hover:drop-shadow-[0_0_2em_rgba(100,108,255,0.67)];
-    }
-    .btn {
-        @apply rounded-md border py-2 px-4 text-base border-gray-950 font-medium bg-gray-800 hover:bg-gray-700 hover:border-cyan-500 cursor-pointer transition-colors duration-200;
-    }
 }
 
 @theme {
@@ -46,4 +31,19 @@
 
     /* animation */
     --animate-spin-slow: spin 10s linear infinite;
+}
+
+@layer components {
+    .center-box {
+        @apply flex items-center justify-center h-screen;
+    }
+    .center-box > .center {
+        @apply p-2 mx-6 text-center;
+    }
+    .logo {
+        @apply h-24 hover:filter hover:drop-shadow-[0_0_2em_rgba(100,108,255,0.67)];
+    }
+    .btn {
+        @apply rounded-md border py-2 px-4 text-base border-gray-950 font-medium bg-gray-800 hover:bg-gray-700 hover:border-cyan-500 cursor-pointer transition-colors duration-200;
+    }
 }

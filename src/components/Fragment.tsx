@@ -7,7 +7,7 @@ export interface FragmentProps {
 const FragmentComponent: React.FC<FragmentProps> = ({children}) => {
   return (
     <>
-        {children}
+      {children}
     </>
   );
 };
