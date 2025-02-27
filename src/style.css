@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@import "tailwindcss";
+
+@layer base {
+    html {
+        @apply font-main text-white bg-gray-900 antialiased;
+    }
+    body {
+        @apply m-0 flex place-items-center min-w-[320px] min-h-screen;
+    }
+}
+
+@layer components {
+    #root {
+        @apply mx-auto p-8 text-center max-w-screen-xl;
+    }
+    .logo {
+        @apply h-24 hover:filter hover:drop-shadow-[0_0_2em_rgba(100,108,255,0.67)];
+    }
+    .btn {
+        @apply rounded-md border py-2 px-4 text-base border-gray-950 font-medium bg-gray-800 hover:bg-gray-700 hover:border-cyan-500 cursor-pointer transition-colors duration-200;
+    }
+}
+
+@theme {
+    /* screens */
+    --breakpoint-sm: 550px;
+    --breakpoint-md: 800px;
+    --breakpoint-lg: 1200px;
+    --breakpoint-xl: 1440px;
+    --breakpoint-2xl: 1800px;
+
+    /* fonts */
+    --font-main: "Roboto", system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+    /* colors */
+    --color-primary: #3ab7bf;
+    --color-secondary: #78dcca;
+
+    /* spacing */
+    --spacing-6: 2.5rem;
+
+    /* borders */
+    --radius-4xl: 10rem;
+
+    /* animation */
+    --animate-spin-slow: spin 10s linear infinite;
+}
