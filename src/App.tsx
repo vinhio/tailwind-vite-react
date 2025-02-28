@@ -1,10 +1,10 @@
 import { Fragment } from "@/components";
-import {ProductModal} from "@/screens";
+import {ImageGallery} from "@/screens";
 
 function App() {
   return (
     <Fragment>
-      <ProductModal/>
+      <ImageGallery/>
     </Fragment>
   );
 }
