@@ -35,7 +35,7 @@
 
 @layer components {
     .center-box {
-        @apply flex items-center justify-center h-screen;
+        @apply flex items-center justify-center min-h-screen;
     }
     .center-box > .center {
         @apply p-2 mx-6 text-center;

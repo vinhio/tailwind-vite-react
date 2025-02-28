@@ -1,10 +1,10 @@
 import { Fragment } from "@/components";
-import {PricingCard} from "@/screens";
+import {ProductModal} from "@/screens";
 
 function App() {
   return (
     <Fragment>
-      <PricingCard/>
+      <ProductModal/>
     </Fragment>
   );
 }
