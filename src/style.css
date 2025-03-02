@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Rokkitt:wght@600;700&display=swap");
 
 @import "tailwindcss";
 
@@ -17,7 +17,9 @@
     --breakpoint-2xl: 1800px;
 
     /* fonts */
-    --font-main: "Roboto", system-ui, Avenir, Helvetica, Arial, sans-serif;
+    --font-main: "Mulish", system-ui, Avenir, Helvetica, Arial, sans-serif;
+    --font-sane: "Mulish", sans-serif;
+    --font-mono: "Rokkitt", monospace;
 
     /* colors */
     --color-primary: #3ab7bf;
