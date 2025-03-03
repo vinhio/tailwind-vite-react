@@ -33,7 +33,26 @@
             background-image: url("./assets/clipboard/bg-header-mobile.png");
         }
     }
+
+    h3 {
+        @apply mb-8 text-4xl font-bold text-dark-grayish-blue md:text-5xl;
+    }
 }
 
 @layer components {
+    .section-container {
+        @apply max-w-6xl mx-auto text-center;
+    }
+
+    .hero-button {
+        @apply p-4 px-8 rounded-full shadow-lg duration-200 hover:opacity-80;
+    }
+
+    .button-container {
+        @apply flex flex-col justify-center w-full space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x-4;
+    }
+
+    .paragraph-section {
+        @apply max-w-3xl mx-auto text-xl text-grayish-blue mb-10;
+    }
 }

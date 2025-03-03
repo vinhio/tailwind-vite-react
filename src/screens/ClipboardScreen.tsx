@@ -1,13 +1,15 @@
 import React, {memo} from 'react';
 import {Fragment} from "@/components";
-import "./Clipboard/clipboard.css";
 import {Hero} from "@/screens/Clipboard/Hero";
+import {Snippet} from "@/screens/Clipboard/Snippet";
 
 const ClipboardScreenComponent: React.FC = () => {
   return (
     <Fragment>
       {/* Hero section */}
       <Hero/>
+      {/* Snippets section */}
+      <Snippet/>
     </Fragment>
   );
 };
