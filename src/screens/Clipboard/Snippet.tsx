@@ -6,7 +6,7 @@ const SnippetComponent: React.FC = () => {
     <Fragment>
       {/* Snippet section */}
       <section id="snippet">
-        <div className="section-container my-20 px-10">
+        <div className="section-container my-20">
           <h3>
             Keep track of your snippets
           </h3>

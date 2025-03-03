@@ -7,7 +7,7 @@ const HeroComponent: React.FC = () => {
     <Fragment>
       {/* Hero section */}
       <section id="hero">
-        <div className="section-container mb-40 px-10 pt-16">
+        <div className="section-container mb-40 pt-16">
           <img src={imgLogo} alt="" className="mx-auto my-16"/>
           <h3>
             A history of everything you copy
