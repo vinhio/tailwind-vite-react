@@ -1,10 +1,10 @@
 import { Fragment } from "@/components";
-import {LoginModal} from "@/screens";
+import { ClipboardScreen } from "./screens";
 
 function App() {
   return (
     <Fragment>
-      <LoginModal/>
+      <ClipboardScreen/>
     </Fragment>
   );
 }

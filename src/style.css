@@ -1,54 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Rokkitt:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 @import "tailwindcss";
 
-@layer base {
-    :root, :host {
-        --font-mono: "Rokkitt", monospace;
-        --font-sans: "Mulish", system-ui, Avenir, Helvetica, Arial, sans-serif;
-    }
-
-    html {
-        @apply text-white bg-gray-900 antialiased;
-    }
-}
-
 @theme {
     /* screens */
-    --breakpoint-sm: 550px;
-    --breakpoint-md: 800px;
-    --breakpoint-lg: 1200px;
+    --breakpoint-sm: 480px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 976px;
     --breakpoint-xl: 1440px;
     --breakpoint-2xl: 1800px;
 
-    /* fonts */
-    --font-*: initial;
-
     /* colors */
-    --color-primary: #3ab7bf;
-    --color-secondary: #78dcca;
+    --color-strong-cyan: hsl(171, 66%, 44%);
+    --color-light-blue: hsl(233, 100%, 69%);
+    --color-dark-grayish-blue: hsl(210, 10%, 33%);
+    --color-grayish-blue: hsl(201, 11%, 66%);
+}
 
-    /* spacing */
-    --spacing-6: 2.5rem;
+@layer base {
+    :root, :host {
+        --font-sans: 'Bai Jamjuree', sans-serif;
+    }
 
-    /* borders */
-    --radius-4xl: 10rem;
+    body {
+        background-image: url("./assets/clipboard/bg-header-desktop.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 
-    /* animation */
-    --animate-spin-slow: spin 10s linear infinite;
+    @media(max-width: 576px) {
+        body {
+            background-image: url("./assets/clipboard/bg-header-mobile.png");
+        }
+    }
 }
 
 @layer components {
-    .center-box {
-        @apply flex items-center justify-center min-h-screen;
-    }
-    .center-box > .center {
-        @apply p-2 mx-6 text-center;
-    }
-    .tfd {
-        @apply p-2 px-4 text-center text-white bg-zinc-800 border border-zinc-600 rounded-md placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none;
-    }
-    .btn {
-        @apply px-5 py-3 text-xs rounded-md text-zinc-800 bg-lime-500 hover:bg-lime-700 hover:text-white duration-500;
-    }
 }
