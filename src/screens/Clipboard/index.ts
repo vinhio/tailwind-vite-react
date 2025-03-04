@@ -4,3 +4,5 @@ export * from './Feature';
 export * from './Access';
 export * from './Workflow';
 export * from './Brands';
+export * from './Download';
+export * from './Footer';

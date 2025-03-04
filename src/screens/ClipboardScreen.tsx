@@ -6,7 +6,8 @@ import {
   Feature,
   Access,
   Workflow,
-  Brands
+  Brands,
+  Download, Footer
 } from "@/screens/Clipboard";
 
 const ClipboardScreenComponent: React.FC = () => {
@@ -24,6 +25,10 @@ const ClipboardScreenComponent: React.FC = () => {
       <Workflow/>
       {/* Brands section */}
       <Brands/>
+      {/* Download section */}
+      <Download/>
+      {/* Footer section */}
+      <Footer/>
     </Fragment>
   );
 };
