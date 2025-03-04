@@ -39,7 +39,7 @@
     }
 
     h5 {
-        @apply mb-2 font-xs leading-8 font-bold text-dark-grayish-blue;
+        @apply mb-2 leading-8 font-bold text-dark-grayish-blue;
     }
 }
 
@@ -59,4 +59,9 @@
     .paragraph-section {
         @apply max-w-3xl mx-auto text-xl text-grayish-blue mb-10;
     }
+
+    .ficon:hover {
+        filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg) brightness(101%) contrast(94%);
+    }
 }
+
