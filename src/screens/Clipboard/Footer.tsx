@@ -9,7 +9,7 @@ const FooterComponent: React.FC = () => {
   return (
     <Fragment>
       {/* Footer section */}
-      <section id="footer" className="bg-gray-50">
+      <footer id="footer" className="bg-gray-50">
         <div className="section-container flex flex-col items-center justify-between md:flex-row">
           <img src={imgLogo} alt="" className="scale-50"/>
           <div className="flex flex-col items-center justify-between flex-1 mb-10 space-y-6 md:flex-row md:mb-0 md:space-y-0 text-grayish-blue">
@@ -39,7 +39,7 @@ const FooterComponent: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </footer>
     </Fragment>
   );
 };
