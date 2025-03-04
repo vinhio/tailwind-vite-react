@@ -19,6 +19,6 @@ const SnippetComponent: React.FC = () => {
   );
 };
 
-SnippetComponent.displayName = "Clipboard";
+SnippetComponent.displayName = "Snippet";
 
 export const Snippet = memo(SnippetComponent);

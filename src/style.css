@@ -37,6 +37,10 @@
     h3 {
         @apply mb-8 text-4xl font-bold text-dark-grayish-blue md:text-5xl;
     }
+
+    h5 {
+        @apply mb-2 font-xs leading-8 font-bold text-dark-grayish-blue;
+    }
 }
 
 @layer components {

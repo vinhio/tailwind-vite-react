@@ -44,6 +44,6 @@ const FeatureComponent: React.FC = () => {
   );
 };
 
-FeatureComponent.displayName = "Clipboard";
+FeatureComponent.displayName = "Feature";
 
 export const Feature = memo(FeatureComponent);

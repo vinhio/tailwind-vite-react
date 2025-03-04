@@ -21,6 +21,6 @@ const AccessComponent: React.FC = () => {
   );
 };
 
-AccessComponent.displayName = "Clipboard";
+AccessComponent.displayName = "Access";
 
 export const Access = memo(AccessComponent);

@@ -32,6 +32,6 @@ const HeroComponent: React.FC = () => {
   );
 };
 
-HeroComponent.displayName = "Clipboard";
+HeroComponent.displayName = "Hero";
 
 export const Hero = memo(HeroComponent);
