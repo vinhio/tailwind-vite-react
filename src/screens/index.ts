@@ -1,1 +1,1 @@
-export * from './ClipboardScreen';
+export * from './LoopStudioScreen';
