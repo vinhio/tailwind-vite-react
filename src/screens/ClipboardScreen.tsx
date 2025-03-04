@@ -1,6 +1,6 @@
 import React, {memo} from 'react';
 import {Fragment} from "@/components";
-import {Hero, Snippet, Feature} from "@/screens/Clipboard";
+import {Hero, Snippet, Feature, Access} from "@/screens/Clipboard";
 
 const ClipboardScreenComponent: React.FC = () => {
   return (
@@ -11,6 +11,8 @@ const ClipboardScreenComponent: React.FC = () => {
       <Snippet/>
       {/* Feature section */}
       <Feature/>
+      {/* Access section */}
+      <Access/>
     </Fragment>
   );
 };
