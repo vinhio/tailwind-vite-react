@@ -10,7 +10,7 @@
     --breakpoint-xl: 1440px;
     --breakpoint-2xl: 1800px;
 
-    /* colors */
+    /* fonts */
     --font-sans: 'Josefin Sans', sans-serif;
     --font-alata: 'Alata';
 
@@ -19,6 +19,9 @@
     --color-light-blue: hsl(233, 100%, 69%);
     --color-dark-grayish-blue: hsl(210, 10%, 33%);
     --color-grayish-blue: hsl(201, 11%, 66%);
+
+    /* spacing */
+    --tracking-widest: 0.3em;
 }
 
 @layer base {
@@ -40,6 +43,28 @@
         background-image: url('./assets/loopstudios/desktop/image-hero.jpg');
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    .creation-container {
+        @apply flex flex-col justify-between w-full space-y-6 text-2xl text-white uppercase md:flex-row md:space-y-0 md:space-x-8;
+
+        .item {
+            @apply relative overflow-hidden md:w-1/4;
+
+            .bg-item {
+                @apply absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900;
+                @apply group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70;
+            }
+
+            .text-item {
+                @apply absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 font-light;
+                @apply group-hover:scale-110 group-hover:text-black;
+            }
+        }
+    }
+
+    .btn {
+        @apply px-10 py-2 my-0 tracking-widest uppercase border-2 border-black font-alata hover:bg-black hover:text-white;
     }
 }
 
