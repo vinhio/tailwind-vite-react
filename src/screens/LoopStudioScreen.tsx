@@ -1,6 +1,6 @@
 import React, {memo} from 'react';
 import {Fragment} from "@/components";
-import {Feature, Hero} from "@/screens/LoopStudio";
+import {Creation, Feature, Footer, Hero} from "@/screens/LoopStudio";
 
 const LoopStudioScreenComponent: React.FC = () => {
   return (
@@ -9,6 +9,10 @@ const LoopStudioScreenComponent: React.FC = () => {
       <Hero/>
       {/* Feature section */}
       <Feature/>
+      {/* Creation section */}
+      <Creation/>
+      {/* Footer section */}
+      <Footer/>
     </Fragment>
   );
 };
