@@ -1,6 +1,6 @@
 import React, {memo} from 'react';
 import {Fragment} from "@/components";
-import {Footer, Header, Hero} from "@/screens/Shortly";
+import {Footer, Header, Hero, Shorten} from "@/screens/Shortly";
 
 const ShortlyScreenComponent: React.FC = () => {
   return (
@@ -9,6 +9,8 @@ const ShortlyScreenComponent: React.FC = () => {
       <Header/>
       {/* Hero section */}
       <Hero/>
+      {/* Shorten section */}
+      <Shorten/>
       {/* Footer section */}
       <Footer/>
     </Fragment>
