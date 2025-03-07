@@ -1,2 +1,4 @@
 export * from './Header';
 export * from './Hero';
+export * from './Feature';
+export * from './Productive';

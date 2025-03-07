@@ -1,12 +1,14 @@
 import React, {memo} from 'react';
 import {Fragment} from "@/components";
-import {Header, Hero} from "@/screens/Fylo";
+import {Feature, Header, Hero, Productive} from "@/screens/Fylo";
 
 const FyloScreenComponent: React.FC = () => {
   return (
     <Fragment>
-      <Header />
+      <Header/>
       <Hero/>
+      <Feature/>
+      <Productive/>
     </Fragment>
   );
 };
