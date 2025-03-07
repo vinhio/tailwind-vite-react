@@ -2,7 +2,7 @@ import React, {memo} from 'react';
 import {Fragment} from "@/components";
 import {
   EarlyAccess,
-  Feature,
+  Feature, Footer,
   Header,
   Hero,
   Productive,
@@ -18,6 +18,7 @@ const FyloScreenComponent: React.FC = () => {
       <Productive/>
       <Testimonials/>
       <EarlyAccess/>
+      <Footer/>
     </Fragment>
   );
 };
