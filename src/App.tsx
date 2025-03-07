@@ -1,10 +1,10 @@
 import { Fragment } from "@/components";
-import { ShortlyScreen } from "./screens";
+import { FyloScreen } from "./screens";
 
 function App() {
   return (
     <Fragment>
-      <ShortlyScreen/>
+      <FyloScreen/>
     </Fragment>
   );
 }

@@ -1,6 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
     /* screens */
@@ -11,84 +13,35 @@
     --breakpoint-2xl: 1800px;
 
     /* fonts */
-    --font-sans: 'Poppins', sans-serif;
+    --font-sans: 'Raleway', sans-serif;
+    --font-opensans: 'Open Sans', sans-serif;
 
     /* colors */
-    --color-cyan: hsl(180, 66%, 49%);
-    --color-cyan-light: hsl(180, 66%, 69%);
-    --color-dark-violet: hsl(257, 27%, 26%);
-    --color-red: hsl(0, 87%, 67%);
-    --color-grayish-violet: hsl(257, 7%, 63%);
-    --color-very-dark-blue: hsl(255, 11%, 22%);
-    --color-very-dark-violet: hsl(260, 8%, 14%);
+    --color-dark-blue: hsl(217, 28%, 15%);
+    --color-dark-blue1: hsl(218, 28%, 13%);
+    --color-dark-blue2: hsl(216, 53%, 9%);
+    --color-dark-blue3: hsl(219, 30%, 18%);
+    --color-accent-cyan: hsl(176, 68%, 64%);
+    --color-accent-blue: hsl(198, 60%, 60%);
+    --color-light-red: hsl(0, 100%, 63%);
 
     /* spacing */
     --tracking-180: '32rem';
+
+    /* background */
+    --background-image-logo-dark-mode: url('assets/fylo/logo-dark-mode.svg');
+    --background-image-logo-light-mode: url('assets/fylo/logo-light-mode.svg');
+    --background-image-curvy-dark-mode: url('assets/fylo/bg-curvy-dark-mode.svg');
+    --background-image-curvy-light-mode: url('assets/fylo/bg-curvy-light-mode.svg');
 }
 
 @layer base {
     :root, :host {
-        --font-sans: 'Poppins', sans-serif;
+        --font-sans: 'Raleway', sans-serif;
     }
 }
 @layer components {
-    .ficon:hover {
-        filter: invert(79%) sepia(61%) saturate(464%) hue-rotate(130deg)
-        brightness(89%) contrast(85%);
-    }
 
-    #cta {
-        background-image: url("assets/shortly/bg-boost-desktop.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    /* Hamburger Menu */
-    .hamburger {
-        cursor: pointer;
-        width: 24px;
-        height: 24px;
-        transition: all 0.25s;
-        position: relative;
-    }
-
-    .hamburger-top,
-    .hamburger-middle,
-    .hamburger-bottom {
-        content: '';
-        position: absolute;
-        width: 24px;
-        height: 3px;
-        top: 0;
-        left: 0;
-        background: #9c9aa6;
-        transform: rotate(0);
-        transition: all 0.5s;
-    }
-
-    .hamburger-middle {
-        transform: translateY(7px);
-    }
-
-    .hamburger-bottom {
-        transform: translateY(14px);
-    }
-
-    .open {
-        transform: translateY(0px);
-    }
-
-    .open .hamburger-top {
-        transform: rotate(45deg) translateY(6px) translateX(6px);
-    }
-
-    .open .hamburger-middle {
-        display: none;
-    }
-
-    .open .hamburger-bottom {
-        transform: rotate(-45deg) translateY(6px) translateX(-6px);
-    }
 }
 
 

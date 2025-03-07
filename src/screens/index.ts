@@ -1,1 +1,1 @@
-export * from './ShortlyScreen';
+export * from './FyloScreen';
