@@ -1,6 +1,13 @@
 import React, {memo} from 'react';
 import {Fragment} from "@/components";
-import {Feature, Header, Hero, Productive} from "@/screens/Fylo";
+import {
+  EarlyAccess,
+  Feature,
+  Header,
+  Hero,
+  Productive,
+  Testimonials
+} from "@/screens/Fylo";
 
 const FyloScreenComponent: React.FC = () => {
   return (
@@ -9,6 +16,8 @@ const FyloScreenComponent: React.FC = () => {
       <Hero/>
       <Feature/>
       <Productive/>
+      <Testimonials/>
+      <EarlyAccess/>
     </Fragment>
   );
 };
