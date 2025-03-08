@@ -1,1 +1,1 @@
-export * from './FyloScreen';
+export * from './BookmarkScreen';

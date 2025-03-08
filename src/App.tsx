@@ -1,10 +1,10 @@
 import { Fragment } from "@/components";
-import { FyloScreen } from "./screens";
+import {BookmarkScreen} from "./screens";
 
 function App() {
   return (
     <Fragment>
-      <FyloScreen/>
+      <BookmarkScreen/>
     </Fragment>
   );
 }
