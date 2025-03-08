@@ -4,7 +4,7 @@ import {
   Download, FAQ,
   Feature,
   Footer,
-  Header, Hero,
+  Header, Hero, NewsLetter,
 } from "@/screens/Bookmark";
 
 const BookmarkScreenComponent: React.FC = () => {
@@ -15,6 +15,7 @@ const BookmarkScreenComponent: React.FC = () => {
       <Feature/>
       <Download/>
       <FAQ/>
+      <NewsLetter/>
       <Footer/>
     </Fragment>
   );
