@@ -38,6 +38,7 @@
 
 }
 
+/* @media screen(lg) { */
 @media (min-width: 1020px) {
     .bg-hero {
         width: 2000px;
@@ -45,6 +46,11 @@
         left: 30%;
         @apply absolute rounded-l-full top-52 bg-soft-blue;
     }
+
+    .bg-tabs {
+        width: 2000px;
+        height: 300px;
+        right: 60%;
+        @apply absolute rounded-r-full top-60 bg-soft-blue;
+    }
 }
-
-
