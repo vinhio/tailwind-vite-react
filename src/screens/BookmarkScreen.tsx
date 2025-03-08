@@ -1,7 +1,7 @@
 import React, {memo} from 'react';
 import {Fragment} from "@/components";
 import {
-  Download,
+  Download, FAQ,
   Feature,
   Footer,
   Header, Hero,
@@ -14,6 +14,7 @@ const BookmarkScreenComponent: React.FC = () => {
       <Hero/>
       <Feature/>
       <Download/>
+      <FAQ/>
       <Footer/>
     </Fragment>
   );
