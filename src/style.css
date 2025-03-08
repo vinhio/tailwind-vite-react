@@ -25,10 +25,7 @@
     --tracking-180: '32rem';
 
     /* background */
-    --background-image-logo-dark-mode: url('assets/fylo/logo-dark-mode.svg');
-    --background-image-logo-light-mode: url('assets/fylo/logo-light-mode.svg');
-    --background-image-curvy-dark-mode: url('assets/fylo/bg-curvy-dark-mode.svg');
-    --background-image-curvy-light-mode: url('assets/fylo/bg-curvy-light-mode.svg');
+    --background-image-hero-1: url('assets/fylo/logo-dark-mode.svg');
 }
 
 @layer base {
@@ -39,32 +36,14 @@
 
 @layer components {
 
-    .container {
-        width: 100%;
-    }
+}
 
-    @media (min-width: 480px) {
-        .container {
-            max-width: 480px;
-        }
-    }
-
-    @media (min-width: 768px) {
-        .container {
-            max-width: 768px;
-        }
-    }
-
-    @media (min-width: 1020px) {
-        .container {
-            max-width: 1020px;
-        }
-    }
-
-    @media (min-width: 1440px) {
-        .container {
-            max-width: 1440px;
-        }
+@media (min-width: 1020px) {
+    .bg-hero {
+        width: 2000px;
+        height: 300px;
+        left: 30%;
+        @apply absolute rounded-l-full top-52 bg-soft-blue;
     }
 }
 
