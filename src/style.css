@@ -25,7 +25,7 @@
     --tracking-180: '32rem';
 
     /* background */
-    --background-image-hero-1: url('assets/fylo/logo-dark-mode.svg');
+    --background-image-dots: url('assets/bookmark/bg-dots.svg');
 }
 
 @layer base {
