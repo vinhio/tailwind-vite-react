@@ -1,5 +1,5 @@
 import { Fragment } from "@/components";
-import {Home} from "@/screens";
+import {Home} from "@/scenes/home";
 
 function App() {
   return (
