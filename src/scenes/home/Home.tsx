@@ -1,13 +1,16 @@
-import React, { memo, useState } from "react";
+import React, { memo, useRef, useState } from "react";
 import viteLogo from "@/assets/vite.svg";
 import reactLogo from "@/assets/react.svg";
 import tailwindLogo from "@/assets/tailwind.svg";
 import { Fragment } from "@/components";
 import { Camera } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button, ButtonKind, ButtonState } from "@/components/ui";
 
 const HomeComponent: React.FC = () => {
   const [count, setCount] = useState(0);
+  const ref = useRef<null | HTMLButtonElement>(null);
+
+  const handleClick = React.useCallback(() => ref.current?.click(), []);
 
   return (
     <Fragment>
@@ -52,16 +55,40 @@ const HomeComponent: React.FC = () => {
             Click on the Vite and React logos to learn more
           </p>
           <div className={`mt-4 flex justify-center space-x-2`}>
-            <Button icon={(<Camera/>)}>
+            <Button
+              ref={ref}
+              onClick={() => console.log("Hello world")}
+              icon={<Camera />}
+              variant={"outline"}
+            >
               Primary
             </Button>
-            <Button icon={(
-              <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
-                <path fillRule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clipRule="evenodd"/>
-              </svg>
-            )} secondary>
+            <Button
+              state={ButtonState.disabled}
+              kind={ButtonKind.icon}
+              icon={
+                <svg
+                  className="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 8 19"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              }
+              variant={"default"}
+              size={"sm"}
+            >
               Secondary
             </Button>
+            <div onClick={handleClick} className={`cursor-pointer`}>
+              Client me
+            </div>
           </div>
         </div>
       </div>
